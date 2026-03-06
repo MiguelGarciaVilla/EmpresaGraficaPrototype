@@ -35,10 +35,15 @@ public class Logo implements Prototipo {
     public void setEslogan(String e)       { this.eslogan  = e; }
     public void setFormato(String f)       { this.formato  = f; }
 
-    @Override
-    public String toString() {
-        return String.format("[%s] colores=%s eslogan='%s' formato=%s %dx%d",
-                nombre, colores, eslogan, formato, ancho, alto);
+    public void imprimir() {
+        System.out.println("Nombre:"+this.nombre);
+        System.out.println("Colores:");
+        colores.forEach(color -> System.out.println(color));
+        System.out.println("Ancho:"+this.ancho);
+        System.out.println("Alto:"+this.alto);
+        System.out.println("Formato:"+this.formato);
+        System.out.println("Eslogan:"+this.eslogan);
+
     }
 
 }

@@ -1,10 +1,10 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class RegistroPlantillas {
+public class RegistroLogos {
     private Map<String, Prototipo> cache= new HashMap<>();
 
-    public void registrar(String clave, Prototipo prototipo){
+    public  void registrar(String clave, Prototipo prototipo){
         cache.put(clave, prototipo);
     }
 
